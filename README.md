@@ -1,6 +1,6 @@
 # Exercise (Use mutation and sonarqube)
 
-1. Create a simple String calculator with a method int Add(string numbers)
+1. Create a simple String calculator with a method int Add(string numbers) [x]
   1. The method can take only 0, 1 or 2 numbers with comma as separator and will return their sum (for an empty string it will return 0) for example “” or “1” or “11,200”
   2. Start with the simplest test case of an empty string and move to 1 and two numbers
   3. Remember to solve things as simply as possible so that you force yourself to write tests you did not think about
