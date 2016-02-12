@@ -17,3 +17,21 @@
 7. Delimiters can be of any length with the following format:  “//[delimiter]\n” for example: “//[***]\n1***2***3” should return 6
 8. Allow multiple delimiters like this:  “//[delim1][delim2]\n” for example “//[*][%]\n1*2%3” should return 6.
 9. Make sure you can also handle multiple delimiters with length longer than one char
+
+# Sonarqube
+Installer : Use [Sonarqube 5.2](http://www.sonarqube.org/downloads/)
+
+Edit and enable database url on (**OPTIONAL**)  
+\sonarqube-5.2\conf\sonar.properties  
+copy ojdbc6.jar to \sonarqube-5.2\extensions\jdbc-driver\oracle
+
+Create db user (**OPTIONAL**)  
+CREATE USER sonarqube IDENTIFIED BY sonarqube;  
+GRANT dba TO sonarqube WITH ADMIN OPTION;
+
+Start sonarqube \sonarqube-5.2\bin\windows-x86-64\StartSonar.bat  
+Open sonarqube http://localhost:9000
+Login as admin/admin
+
+[Run sonarqube](http://docs.sonarqube.org/display/SONAR/Analyzing+with+SonarQube+Scanner+for+Maven)
+Open cmd to the pom.xml directory and run mvn clean verify sonar:sonar
