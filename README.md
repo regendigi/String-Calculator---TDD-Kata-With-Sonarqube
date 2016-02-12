@@ -33,5 +33,5 @@ Start sonarqube \sonarqube-5.2\bin\windows-x86-64\StartSonar.bat
 Open sonarqube http://localhost:9000
 Login as admin/admin
 
-[Run sonarqube](http://docs.sonarqube.org/display/SONAR/Analyzing+with+SonarQube+Scanner+for+Maven)
+[Run sonarqube](http://docs.sonarqube.org/display/SONAR/Analyzing+with+SonarQube+Scanner+for+Maven)  
 Open cmd to the pom.xml directory and run mvn clean verify sonar:sonar
